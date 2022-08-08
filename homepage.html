@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,13 +15,13 @@
 
 <body>
   <header class="header">
-    <div class="logo"><a href="#"></a></div>
+    <div class="logo"><a href="homepage.html"></a></div>
     <nav>
       <ul class="nav df jcfe">
         <li><a href="">系列鏡框</a></li>
         <li><a href="">門市據點</a></li>
         <li><a href="">部落格</a></li>
-        <li><a href="">常見問題</a></li>
+        <li><a href="./question.html">常見問題</a></li>
       </ul>
     </nav>
     </header>
@@ -29,7 +29,7 @@
   <div class="container">
     <div class="df vh fxdc jcc aife">
       <h1><span>Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h1>
-    <a href="#" class="buybtn">立即購買</a>
+      <input class="buybtn" type="button" value="立即購買">
     </div>
   </div>
 </section>
@@ -73,15 +73,15 @@
     <h2 class="title mb-6">經典系列鏡框</h2>
     <ul class="classic df fxww jcc">
       <li class="mr-3">
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true" alt="OPTICAL">
+        <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true" alt="OPTICAL"></a>
         <h3 class="title title-ita">OPTICAL</h3>
       </li>
       <li class="mr-3">
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true" alt="SUNGLASSES">
+        <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true" alt="SUNGLASSES"></a>
         <h3 class="title title-ita">SUNGLASSES</h3>
       </li>
       <li>
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true" alt="FUNCTIONAL">
+        <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true" alt="FUNCTIONAL"></a>
         <h3 class="title title-ita">FUNCTIONAL</h3>
       </li>
     </ul>
@@ -92,12 +92,20 @@
     <h2 class="title title-white mb-6">聯名設計鏡框</h2>
     <ul class="cobrand df">
       <li>
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true" alt="">
-        <h3 class="title title-ita p-1">DOUBLE A+</h3>
+        <a href="#">
+          <div class="brand">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true" alt="doubleAglasses">
+          </div>
+          <h3 class="title title-ita p-1">DOUBLE A+</h3>
+        </a>
       </li>
       <li>
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true" alt="">
-        <h3 class="title title-ita p-1">YOUTH</h3>
+        <a href="#">
+          <div class="brand">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true" alt="youthglasses">
+          </div>
+          <h3 class="title title-ita p-1">YOUTH</h3>
+        </a>
       </li>
     </ul>
   </div>
@@ -142,20 +150,37 @@
     </ul>
   </div>
 </section>
-<section class="contact pt-10 pb-10">
+<section class="contactform pt-10 pb-10">
   <div class="container-s">
     <h2 class="title mb-6">聯絡我們</h2>
     <p class="mb-3">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-    <p class="form mb-1">姓名</p>
-    <p class="form-type mb-2"><span>陳小明</span></p>
-    <p class="form mb-1">聯絡電話</p>
-    <p class="form-type mb-2"><span>0912-345-678</span></p>
-    <p class="form mb-1">電子郵件</p>
-    <p class="form-type mb-2"><span>example@email.com</span></p>
-
+    <form action="#">
+      <div class="mb-2">
+        <label class="db mb-1" for="name">姓名</label>
+        <input type="text" class="form form-name" name="name" value="陳小明">
+      </div>
+      <div class="mb-2">
+        <label class="db mb-1" for="tel">聯絡電話</label>
+        <input type="text" class="form form-tel" name="tel" value="0912-345-678">
+      </div>
+      <div class="mb-2">
+        <label class="db mb-1" for="mail">電子郵件</label>
+        <input type="text" class="form form-mail" name="mail" value="example@email.com">
+      </div>
+      <div class="mb-2">
+        <label class="db mb-1" for="suggestion">意見反應</label>
+        <textarea class="form form-suggestion" name="suggestion" placeholder="請輸入您的意見" rows="5" ></textarea>
+      </div>
+      <div class="mb-6">
+        <input type="checkbox" name="checkbox">
+        <label for="">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+      </div>
+      <div class="submit df jcc">
+        <input class="submit-btn" type="button" name="submit" value="確認送出">
+      </div>
+    </form>
   </div>
 </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-nav df jcsb pt-6">
@@ -164,7 +189,7 @@
           <li class="mr-6"><a href="#">系列鏡框</a></li>
           <li class="mr-6"><a href="#">門市據點</a></li>
           <li class="mr-6"><a href="#">部落格</a></li>
-          <li><a href="#">常見問題</a></li>
+          <li><a href="./question.html">常見問題</a></li>
         </ul>
         <ul class="footer-logo mb-3 df">
           <li class="mr-4"><a href="https://www.facebook.com/"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true" alt="facebook"></a></li>

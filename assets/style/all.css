@@ -45,18 +45,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* css reset */
 body {
   font-family: 'Noto Sans TC','Roboto', sans-serif;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 1.5; }
 
 img {
   vertical-align: middle;
   max-width: 100%;
   height: auto; }
 
-/* base setting */
+a {
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none; }
+
 .mr-2 {
   margin-right: 16px; }
 
@@ -87,11 +90,17 @@ img {
 .mb-9 {
   margin-bottom: 72px; }
 
+.mt-12 {
+  margin-top: 96px; }
+
 .p-1 {
   padding: 8px; }
 
 .p-2 {
   padding: 16px; }
+
+.pl-2 {
+  padding-left: 16px; }
 
 .pt-6 {
   padding-top: 48px; }
@@ -118,6 +127,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.db {
+  display: block; }
 
 .fxww {
   -ms-flex-wrap: wrap;
@@ -175,33 +187,48 @@ img {
   background-size: cover; }
 
 .nav li {
-  font-size: 20px;
-  line-height: 30px; }
+  font-size: 20px; }
 
 .nav a {
-  display: block;
+  display: inline-block;
   padding: 25px;
-  margin-left: 14px;
-  color: #FFFFFF;
-  text-decoration: none; }
+  margin-left: 14px; }
   .nav a:hover {
     opacity: 70%; }
+
+.footer {
+  background-color: #AA0601;
+  color: #FFF; }
+  .footer a {
+    color: #FFFFFF;
+    text-decoration: none; }
+    .footer a:hover {
+      opacity: 70%; }
+  .footer-contact {
+    border-bottom: 1px solid #FFF; }
+    .footer-contact li {
+      font-size: 36px;
+      line-height: 54px; }
+      .footer-contact li span {
+        font-size: 48px; }
+  .footer-logo img {
+    width: 48px;
+    height: 48px; }
 
 .banner {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true); }
   .banner h1 {
     color: #650300;
     font-size: 64px;
-    line-height: 96px;
     font-weight: bold;
-    text-align: right; }
+    text-align: right;
+    margin-bottom: 4px; }
     .banner h1 span {
       font-size: 36px;
-      line-height: 54px;
       font-weight: normal; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1296px;
   margin: 0 auto;
   padding: 0px 12px; }
   .container-s {
@@ -211,10 +238,9 @@ img {
 .buybtn {
   background-color: #AA0601;
   color: #FFFFFF;
+  border: 0px;
   font-size: 20px;
-  line-height: 30px;
   font-weight: bold;
-  text-decoration: none;
   padding: 6px 12px; }
   .buybtn:hover {
     background-color: #650300; }
@@ -238,7 +264,7 @@ img {
 .icon {
   color: #650300; }
   .icon li {
-    max-width: 23%; }
+    max-width: calc((100% - 72px) / 4); }
     .icon li h3 {
       font-size: 24px;
       line-height: 36px;
@@ -252,7 +278,13 @@ img {
       color: #000; }
 
 .classic li {
-  max-width: 30%; }
+  max-width: calc((100% - 48px) / 3); }
+  .classic li:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+    .classic li:hover h3 {
+      color: #650300; }
 
 .section-4 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true); }
@@ -260,8 +292,26 @@ img {
 .cobrand h3 {
   background-color: #fff; }
 
+.cobrand li:hover img {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5); }
+
+.cobrand li:hover h3 {
+  opacity: 80%; }
+
+.brand {
+  overflow: hidden; }
+  .brand img {
+    -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+
 .recommend li {
-  max-width: 23%;
+  width: 23%;
   border-radius: 4px;
   border: 1px solid #DEE2E6;
   -webkit-box-shadow: 0px 2px 6px #00000029;
@@ -271,35 +321,42 @@ img {
     font-size: 14px;
     line-height: 21px; }
 
-.contact {
+.contactform {
   background-color: #FBF2F2; }
-  .contact p {
+  .contactform p {
     font-size: 20px;
     line-height: 30px; }
 
-.form-type {
+.form {
+  width: 100%;
+  padding: 6px 12px;
   border: 1px solid #000;
-  padding-left: 12px;
-  padding-top: 6px;
-  padding-bottom: 6px; }
-  .form-type span {
-    opacity: 20%; }
+  word-wrap: normal; }
 
-.footer {
+.submit-btn {
   background-color: #AA0601;
-  color: #FFF; }
-  .footer a {
-    color: #FFFFFF;
-    text-decoration: none; }
-  .footer-contact {
-    border-bottom: 1px solid #FFF; }
-    .footer-contact li {
-      font-size: 36px;
-      line-height: 54px; }
-      .footer-contact li span {
-        font-size: 48px; }
-  .footer-logo img {
-    width: 48px;
-    height: 48px; }
+  color: #FFF;
+  display: inline-block;
+  border: 0px;
+  padding: 16px 176px;
+  font-weight: bold; }
+  .submit-btn:hover {
+    background-color: #650300; }
+
+.wrap {
+  max-width: 856px; }
+
+.question h1 {
+  font-size: 48px;
+  font-weight: bold;
+  border-left: 8px solid #AA0601; }
+
+.question h2 {
+  font-size: 24px;
+  font-weight: bold; }
+
+.question h3 {
+  font-size: 20px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=all.css.map */
