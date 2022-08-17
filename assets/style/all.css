@@ -90,7 +90,7 @@ h3 {
         max-width: 576px; } }
     @media (max-width: 576px) {
       .container-s {
-        max-width: 372px; } }
+        max-width: 348px; } }
 
 .mr-1 {
   margin-right: 8px; }
@@ -539,7 +539,13 @@ footer {
     padding: 6px 12px; }
 
 .w33 {
-  width: 33.33%; }
+  max-width: 33.33%; }
+  @media (max-width: 768px) {
+    .w33 {
+      max-width: 50%; } }
+  @media (max-width: 576px) {
+    .w33 {
+      max-width: 100%; } }
 
 .card {
   margin-right: 24px; }
