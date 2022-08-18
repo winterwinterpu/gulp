@@ -384,7 +384,8 @@ footer {
         max-width: 100%; } }
 
 .classic li {
-  max-width: 33.33%; }
+  max-width: 33.33%;
+  padding: 0px 12px; }
   .classic li:hover img {
     opacity: 70%; }
   .classic li:hover h2 {
@@ -399,13 +400,17 @@ footer {
 
 @media (max-width: 768px) {
   .classic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .classic li {
-      max-width: 50%;
+      max-width: 52%;
       margin-bottom: 24px; } }
 
 @media (max-width: 576px) {
