@@ -515,7 +515,7 @@ footer {
   font-weight: bold;
   border-left: 8px solid #AA0601; }
   @media (max-width: 576px) {
-    .pagetitle-mobile {
+    .pagetitle {
       font-size: 24px;
       margin-top: 40px;
       margin-bottom: 24px; } }
@@ -543,17 +543,18 @@ footer {
     font-size: 18px;
     padding: 6px 12px; }
 
-.w33 {
-  max-width: 33.33%; }
+.card-wrap {
+  max-width: 33.33%;
+  margin-bottom: 48px; }
   @media (max-width: 768px) {
-    .w33 {
+    .card-wrap {
       max-width: 50%; } }
   @media (max-width: 576px) {
-    .w33 {
+    .card-wrap {
       max-width: 100%; } }
 
 .card {
-  margin-right: 24px; }
+  padding: 0px 12px; }
   .card h3, .card ul {
     border: 1px solid #00000020; }
   .card h3 {
