@@ -1,0 +1,31 @@
+@mixin pad{
+    @media(max-width:768px){
+      @content;
+    }
+}
+@mixin mobile{
+    @media(max-width:576px){
+      @content;
+    }
+}
+.container{
+    max-width: 1320px;
+    margin:0 auto;
+    padding: 0px 12px;
+    @include pad{
+        max-width: 720px;
+    }
+    @include mobile{
+        max-width: 372px;
+    }
+    &-s{
+      max-width: 636px;
+      margin: 0 auto;
+      @include pad{
+        max-width: 576px;
+    }
+      @include mobile{
+        max-width: 348px;
+    }
+    }
+  }

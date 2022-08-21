@@ -1,0 +1,50 @@
+.selectarea{
+    width: calc((100%-48px)/3);
+    label{
+        font-size: 24px;
+    }
+    select{
+        width: 70%;
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+}
+.card{
+    max-width: 33.33%;
+    margin-bottom: 48px;
+    @include pad{
+        max-width: 50%;
+    }
+    @include mobile{
+        max-width: 100%;
+    }
+}
+.card-wrap{
+    padding: 0px 12px;
+    h3,ul{
+        border: 1px solid #00000020;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 400;
+        padding: 8px 24px;
+    }
+    ul{
+        padding: 16px 24px;
+    }
+    .tel{
+        color: #000;
+    }
+    .moreinfo-btn{
+        display: block;
+        background-color: #000;
+        text-align: center;
+        font-size: 19px;
+        line-height: 27px;
+        padding: 16px;
+        &:hover{
+            opacity: 70%;
+        }
+    }
+    
+}
