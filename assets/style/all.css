@@ -280,6 +280,101 @@ footer {
         height: 24px;
         margin-left: 8px; } }
 
+.copyright {
+  padding-bottom: 32px; }
+  @media (max-width: 576px) {
+    .copyright {
+      display: block;
+      padding-bottom: 16px; }
+      .copyright p {
+        margin-bottom: 8px; }
+      .copyright ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .copyright ul li {
+          margin-bottom: 8px; } }
+
+.header {
+  background-color: #AA0601;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 576px) {
+    .header {
+      display: block; } }
+
+.logo a {
+  width: 80px;
+  height: 49px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media (max-width: 576px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 24px;
+    border-bottom: 2px solid white; } }
+
+.nav li {
+  font-size: 20px; }
+
+.nav a {
+  padding: 25px;
+  margin-left: 14px; }
+  .nav a:hover {
+    opacity: 70%; }
+
+@media (max-width: 576px) {
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .nav li {
+      font-size: 16px;
+      -webkit-writing-mode: vertical-lr;
+          -ms-writing-mode: tb-lr;
+              writing-mode: vertical-lr; } }
+
+footer {
+  background-color: #AA0601;
+  color: #FFF; }
+  footer a:hover {
+    opacity: 70%; }
+
+.footer {
+  border-bottom: 1px solid #fff; }
+  .footer-contact, .footer span {
+    font-size: 36px; }
+  .footer-logo li {
+    width: 48px;
+    height: 48px;
+    margin-left: 24px; }
+  @media (max-width: 576px) {
+    .footer {
+      padding-top: 24px; }
+      .footer-contact, .footer span {
+        font-size: 16px; }
+      .footer-nav {
+        display: none; }
+      .footer-logo li {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px; } }
+
 @media (max-width: 576px) {
   .copyright {
     display: block; }
