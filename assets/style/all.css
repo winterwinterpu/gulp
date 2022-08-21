@@ -375,19 +375,21 @@ footer {
         height: 24px;
         margin-left: 8px; } }
 
-@media (max-width: 576px) {
-  .copyright {
-    display: block; }
-    .copyright p {
-      margin-bottom: 8px; }
-    .copyright ul {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      padding-bottom: 24px; }
-      .copyright ul li {
-        margin-bottom: 8px; } }
+.copyright {
+  padding-bottom: 32px; }
+  @media (max-width: 576px) {
+    .copyright {
+      display: block;
+      padding-bottom: 16px; }
+      .copyright p {
+        margin-bottom: 8px; }
+      .copyright ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .copyright ul li {
+          margin-bottom: 8px; } }
 
 .banner {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
