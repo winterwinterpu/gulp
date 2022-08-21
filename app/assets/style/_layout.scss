@@ -182,14 +182,15 @@
     }
   }
   .copyright{
+    padding-bottom: 32px;
     @include mobile{
       display: block;
+      padding-bottom: 16px;
       p{
         margin-bottom: 8px;
       }
       ul{
         flex-direction: column;
-        padding-bottom: 24px;
         li{
           margin-bottom: 8px;
         }
