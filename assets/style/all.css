@@ -575,6 +575,9 @@ footer {
 
 .card-wrap {
   padding: 0px 12px; }
+  @media (max-width: 992px) {
+    .card-wrap {
+      padding: 0px; } }
   .card-wrap h3, .card-wrap ul {
     border: 1px solid #00000020; }
   .card-wrap h3 {
@@ -604,15 +607,12 @@ footer {
 
 @media (max-width: 992px) {
   .storemore-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+    display: block; } }
 
-.storemore-card .card-wrap {
+.storemore-card-wrap {
   max-width: 40%; }
   @media (max-width: 992px) {
-    .storemore-card .card-wrap {
+    .storemore-card-wrap {
       max-width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -620,25 +620,28 @@ footer {
       margin-bottom: 24px;
       margin-right: -12px;
       margin-left: -12px; }
-      .storemore-card .card-wrap img {
+      .storemore-card-wrap img {
         max-width: 50%;
         padding: 0px 12px; }
-      .storemore-card .card-wrap div {
+      .storemore-card-wrap div {
         padding: 0px 12px; } }
   @media (max-width: 576px) {
-    .storemore-card .card-wrap {
+    .storemore-card-wrap {
       max-width: 100%;
       display: block; }
-      .storemore-card .card-wrap img {
+      .storemore-card-wrap img {
         max-width: 100%; } }
 
 .map {
-  width: 60%;
-  padding: 0px 12px; }
+  width: 60%; }
+  .map iframe {
+    padding: 0px 12px; }
   @media (max-width: 992px) {
     .map {
       width: 100%;
-      height: 414px; } }
+      height: 414px;
+      margin-right: -12px;
+      margin-left: -12px; } }
   @media (max-width: 576px) {
     .map {
       height: 208px; } }
