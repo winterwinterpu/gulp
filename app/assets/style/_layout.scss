@@ -3,106 +3,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @include mobile{
-      display: block;
-    }
-  }
-  .logo{
-    a{
-      width: 80px;
-      height: 49px;
-      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    @include mobile{
-      display: flex;
-      justify-content: center;
-      padding: 24px;
-      border-bottom: 2px solid white
-    }
-  }
-  .nav{
-      li{
-        font-size: 20px;
-      }
-      a{
-        padding: 25px;
-        margin-left: 14px;
-        &:hover{
-          opacity: 70%;
-        }
-    }
-    @include mobile{
-      justify-content: center;
-      li{
-        font-size: 16px;
-        writing-mode: vertical-lr;
-      }
-    }
-  }
-  // header & footer
-  footer{
-    background-color: $primarycolor;
-    color: #FFF;
-    a{
-      &:hover{
-        opacity: 70%;
-      }
-    } 
-  }
-  .footer{
-    border-bottom: 1px solid #fff;
-    &-contact,span{
-      font-size: 36px;
-    }
-    &-logo{
-      li{
-        width: 48px;
-        height: 48px;
-        margin-left: 24px;
-      }
-    }
-  @include mobile{
-    padding-top: 24px;
-      &-contact,span{
-        font-size: 16px;
-      }
-      &-nav{
-        display: none;
-      }
-      &-logo{
-        li{
-          width: 24px;
-          height: 24px;
-          margin-left: 8px;
-        }
-      }
-    }
-  }
-  .copyright{
-    padding-bottom: 32px;
-    @include mobile{
-      display: block;
-      padding-bottom: 16px;
-      p{
-        margin-bottom: 8px;
-      }
-      ul{
-        flex-direction: column;
-        li{
-          margin-bottom: 8px;
-        }
-      }
-    }
-  }
+    @media(max-width:796px){
 
-.header{
-    background-color: $primarycolor;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    }
     @include mobile{
       display: block;
     }
@@ -158,10 +61,15 @@
       font-size: 36px;
     }
     &-logo{
+      ul{
+        @include m-x-12;
+      }
       li{
-        width: 48px;
-        height: 48px;
-        margin-left: 24px;
+        padding:0px 12px;
+        img{
+          width: 48px;
+          height: 48px;
+        }
       }
     }
   @include mobile{
