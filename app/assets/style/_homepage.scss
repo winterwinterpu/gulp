@@ -48,6 +48,12 @@
 // 用專業的心，做專業的事
   .feature{
     background-color: $secondarycolor;
+    @include pad{
+      padding-bottom: 56px;
+    }
+    @include mobile{
+      padding-bottom: 16px;
+    }
   }
   .title{
     color: #650300;
@@ -91,6 +97,7 @@
       justify-content: center;
       li{
         max-width: 50%;
+        margin-bottom: 24px;
       }
     }
     @include mobile{
