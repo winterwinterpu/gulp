@@ -583,6 +583,13 @@ footer {
     padding: 8px 24px; }
   .card-wrap ul {
     padding: 16px 24px; }
+    .card-wrap ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
   .card-wrap .tel {
     color: #000; }
   .card-wrap .moreinfo-btn {
