@@ -577,10 +577,10 @@ input, textarea {
   margin-bottom: 48px; }
   @media (max-width: 992px) {
     .card {
-      max-width: 50%; } }
+      width: 50%; } }
   @media (max-width: 576px) {
     .card {
-      max-width: 100%; } }
+      width: 100%; } }
 
 .card-wrap {
   padding: 0px 12px; }
