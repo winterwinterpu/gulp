@@ -243,5 +243,10 @@ input,textarea{
         &:hover{
           background-color: #650300;
         }
+        @include pad{
+          width: 95%;
+          padding: 16px 0px;
+          margin: 0 auto;
+        }
       }
     }
