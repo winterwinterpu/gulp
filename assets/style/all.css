@@ -508,6 +508,10 @@ footer {
         max-width: 100%;
         margin-bottom: 16px; } }
 
+input, textarea {
+  background-color: transparent;
+  border: 1px solid #000; }
+
 .section-6 {
   background-color: #FBF2F2; }
   .section-6 p {
